@@ -1,0 +1,647 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>🍕Pizzaria Forno do sul </title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <!-- Navegação -->
+    <nav class="navbar navbar-expand-lg ">
+        <div class="container">
+            <img src="./src/bandeiras/metodos-de-pagamento-white.png" alt="metodosdePagamento" class="metodosPagamento">
+            <a class="navbar-brand" href="#"><span style="font-size: 1.5em;">Pizzaria Forno do sul</span></a>
+
+            <!-- Botão Hamburguer -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menuMobile" aria-controls="menuMobile" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <!-- Menu que colapsa no mobile -->
+            <div class="collapse navbar-collapse" id="menuMobile">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#pedidos">Promoções</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#montar">Montar Pizza</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contato">Contato</a></li>
+                </ul>
+                <img src="./src/Logo.png" alt="logo-cabecalho" id="logo-cabecalho"style="height: 55px; width: 55px; left: 270px; position: relative;">
+            </div>
+        </div>
+    </nav>
+
+    <!-- O resto do código continua aqui... -->
+    <!-- Cabeçalho, seções de pedidos, montar pizza, contato e rodapé -->
+<!-- Cabeçalho -->
+    <header>
+        
+    
+        <img src="./src/Logo.png" alt="" style="width: 600px; height: 430px;">
+    </header>
+
+    <!-- Pedidos -->
+    <section id="pedidos" class="container my-5">
+    <h2 class="text-center mb-4">Nossos Combos Promocionais</h2>
+
+    <div id="comboCarousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="5000">
+        <div class="carousel-inner">
+
+            <!-- Slide 1 -->
+            <div class="carousel-item active">
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="card">
+                            <img src="./src/Combo-familia.jpg" class="card-img-top" alt="Combo Família">
+                            <div class="card-body">
+                                <h5 class="card-title">Combo Família</h5>
+                                <p class="card-text">2 Pizzas grandes + 1 Refrigerante 2L</p>
+                                <div class="preco">R$99,00</div>
+                                <a href="#" class="btn btn-danger">Pedir Combo</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card">
+                            <img src="./src/Combo 2.jpg" class="card-img-top" alt="Combo Casal">
+                            <div class="card-body">
+                                <h5 class="card-title">Combo Casal</h5>
+                                <p class="card-text">1 Pizza Grande + 1 Pizza Broto + 1 Refri 1,5L</p>
+                                <div class="preco">R$79,00</div>
+                                <a href="#" class="btn btn-danger">Pedir Combo</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card">
+                            <img src="./src/Combo 3.png" class="card-img-top" alt="Combo Individual">
+                            <div class="card-body">
+                                <h5 class="card-title">Combo Individual</h5>
+                                <p class="card-text">1 Pizza Broto + 1 Bebida 350ml</p>
+                                <div class="preco">R$23,00</div>
+                                <a href="#" class="btn btn-danger">Pedir Combo</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Slide 2 -->
+            <div class="carousel-item">
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="card">
+                            <img src="./src/Combo 4.jpg" class="card-img-top" alt="Combo Kids">
+                            <div class="card-body">
+                                <h5 class="card-title">Combo Torre</h5>
+                                <p class="card-text">1 Torre de chopp 2,5L + porção de fritas</p>
+                                <div class="preco">R$69,90</div>
+                                <a href="#" class="btn btn-danger">Pedir Combo</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card">
+                            <img src="./src/Combo 5.png" class="card-img-top" alt="Combo Doce">
+                            <div class="card-body">
+                                <h5 class="card-title">Combo Doce</h5>
+                                <p class="card-text">1 Calzone + 1 Refri de lata</p>
+                                <div class="preco">R$42,00</div>
+                                <a href="#" class="btn btn-danger">Pedir Combo</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card">
+                            <img src="./src/Combo 6.png" class="card-img-top" alt="Combo Gourmet">
+                            <div class="card-body">
+                                <h5 class="card-title">Combo Lasanha</h5>
+                                <p class="card-text">2 Lasanhas + 1 refri  1L</p>
+                                <div class="preco">R$59,00</div>
+                               <a href="finalizar_pedido_combo.html?combo=Combo Família&descricao=2%20Pizzas%20grandes%20+%201%20Refrigerante%202L&preco=99,00" class="btn btn-danger">Pedir Combo</a>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- Controles -->
+        <button class="carousel-control-prev" type="button" data-bs-target="#comboCarousel" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon " aria-hidden="true"></span>
+            <span class="visually-hidden">Anterior</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#comboCarousel" data-bs-slide="next">
+            <span class="carousel-control-next-icon " aria-hidden="true"></span>
+            <span class="visually-hidden">Próximo</span>
+        </button>
+    </div>
+</section>
+
+
+
+    <!-- Montar Pizza -->
+     <section id="montar" class="container">
+        <h2 class="text-center mb-4">Monte sua Própria Pizza</h2>
+        <form id="pizzaForm">
+            <div class="mb-3">
+                <label class="form-label">Tamanho:</label>
+                <select class="form-select" id="tamanho">
+                    <option value="broto (4 Fatias)" data-limite-sabores="1">Broto (1 sabor) 4 fatias R$22,00</option>
+                    <option value="media (6 Fatias)" data-limite-sabores="2">Média (2 sabores) 6 fatias R$35,00</option>
+                    <option value="grande (12 Fatias)" data-limite-sabores="3">Grande (até 3 sabores) 12 fatias R$59,00</option>
+                    <option value="gigante (16 Fatias)" data-limite-sabores="4">Gigante (até 4 sabores) 16 fatias $75,00 </option>
+                </select>
+            </div>
+            <div class="mb-3">
+                <label class="form-label">Escolha os sabores:</label>
+
+                <!-- Sabores principais -->
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="05 QUEIJOS" id="sabor1" />
+                    <label class="form-check-label" for="sabor1">
+                        <strong>05 QUEIJOS</strong><br />
+                        Molho, mussarela, parmesão, provolone, catupiry, cheddar e orégano
+                    </label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="06 QUEIJOS" id="sabor2" />
+                    <label class="form-check-label" for="sabor2">
+                        <strong>06 QUEIJOS</strong><br />
+                        Molho, mussarela, parmesão, provolone, catupiry, cheddar, gorgonzola e orégano
+                    </label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="4 FORMAGIO" id="sabor3" />
+                    <label class="form-check-label" for="sabor3">
+                        <strong>4 FORMAGIO</strong><br />
+                        Molho, mussarela, parmesão, provolone e cream cheese
+                    </label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="ATUM" id="sabor4" />
+                    <label class="form-check-label" for="sabor4">
+                        <strong>ATUM</strong><br />
+                        Molho, mussarela, atum, tomate picado, cebola e orégano
+                    </label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="ATUM C/ALCAPARRAS" id="sabor5" />
+                    <label class="form-check-label" for="sabor5">
+                        <strong>ATUM C/ALCAPARRAS</strong><br />
+                        Molho, atum, alcaparras e palmito
+                    </label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="BACON ESPECIAL" id="sabor6" />
+                    <label class="form-check-label" for="sabor6">
+                        <strong>BACON ESPECIAL</strong><br />
+                        Molho, mussarela, bacon, cheddar e cebola crocante
+                    </label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="BIMBIM" id="sabor7" />
+                    <label class="form-check-label" for="sabor7">
+                        <strong>BIMBIM</strong><br />
+                        Molho, mussarela, provolone, bacon, ovos e orégano
+                    </label>
+                </div>
+
+                <!-- Botão para expandir -->
+                <button
+                    type="button"
+                    class="btn btn-link"
+                    onclick="document.getElementById('maisSabores').style.display='block'; this.style.display='none';"
+                >
+                    + Mais Sabores
+                </button>
+
+                <!-- Sabores ocultos inicialmente -->
+                <div id="maisSabores" style="display: none;">
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="BRÓCOLIS COM TOMATE SECO" id="sabor10">
+                        <label class="form-check-label" for="sabor10">
+                            <strong>BRÓCOLIS COM TOMATE SECO</strong><br>
+                            Molho, mussarela, brocolis e tomate seco<br>
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="CALABRESA ESPECIAL" id="sabor11">
+                        <label class="form-check-label" for="sabor11">
+                            <strong>CALABRESA ESPECIAL</strong><br>
+                            Molho, mussarela, calabresa, cheddar e cebola crocante<br>
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="CALABRESA PLUS" id="sabor12">
+                        <label class="form-check-label" for="sabor12">
+                            <strong>CALABRESA PLUS</strong><br>
+                            Molho, mussarela, calabresa, cheddar, tomate e orégano<br>
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="CAMPONESA" id="sabor13">
+                        <label class="form-check-label" for="sabor13">
+                            <strong>CAMPONESA</strong><br>
+                            Molho, mussarela, bacon, milho, ervilha, palmito e orégano<br>
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="CANADENSE" id="sabor14">
+                        <label class="form-check-label" for="sabor14">
+                            <strong>CANADENSE</strong><br>
+                            Molho, mussarela, lombo e champignon e orégano<br>
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="CREAN CRACKER" id="sabor15">
+                        <label class="form-check-label" for="sabor15">
+                            <strong>CREAN CRACKER</strong><br>
+                            Molho, mussarela, bacon, creme de leite, batata palha e orégano<br>
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="CROCANTISSIMO" id="sabor16">
+                        <label class="form-check-label" for="sabor16">
+                            <strong>CROCANTISSIMO</strong><br>
+                            Molho, mussarela, bacon, batata palha e cheddar<br>
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="DA CASA" id="sabor17">
+                        <label class="form-check-label" for="sabor17">
+                            <strong>DA CASA</strong><br>
+                            Molho, mussarela, frango, presunto, milho, cheddar, ovos, azeitona e oregano<br>
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="DELICATA" id="sabor18">
+                        <label class="form-check-label" for="sabor18">
+                            <strong>DELICATA</strong><br>
+                            Molho, mussarela, lombo, catupiry, palmito e orégano<br>
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="DOM FÁVERO" id="sabor19">
+                        <label class="form-check-label" for="sabor19">
+                            <strong>DOM FÁVERO</strong><br>
+                            Molho, mussarela, lombo, bacon, milho, ervilha, ovos, catupiry e orégano<br>
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="DUCHEF" id="sabor20">
+                        <label class="form-check-label" for="sabor20">
+                            <strong>DUCHEF</strong><br>
+                            MOLHO, MUSSARELA, FRANGO, BACON, PALMITO E OVO DE CODORNA<br>
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="ESCAROLA COM BACON" id="sabor21">
+                        <label class="form-check-label" for="sabor21">
+                            <strong>ESCAROLA COM BACON</strong><br>
+                            Molho, mussarela, escarola, bacon e orégano<br>
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="ESCAROLA ESPECIAL" id="sabor22">
+                        <label class="form-check-label" for="sabor22">
+                            <strong>ESCAROLA ESPECIAL</strong><br>
+                            Escarola, alho, cebola, parmesão e orégano<br>
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="ESPANHOLA" id="sabor23">
+                        <label class="form-check-label" for="sabor23">
+                            <strong>ESPANHOLA</strong><br>
+                            Molho, mussarela, presunto, tomate, cebola, ovos, azeitona e orégano<br>
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="FIORENTINA" id="sabor24">
+                        <label class="form-check-label" for="sabor24">
+                            <strong>FIORENTINA</strong><br>
+                            Molho, mussarela, calabresa, cebola, ovos e catupiry<br>
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="FRANCESA" id="sabor25">
+                        <label class="form-check-label" for="sabor25">
+                            <strong>FRANCESA</strong><br>
+                            Molho, mussarela, lombo, tomate, catupiry e champignon<br>
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="FRANGO C/BACON" id="sabor26">
+                        <label class="form-check-label" for="sabor26">
+                            <strong>FRANGO C/BACON</strong><br>
+                            MOLHO, MUSSARELA, FRANGO E BACON<br>
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="FRANGO CATUPIRY C/BACON" id="sabor27">
+                        <label class="form-check-label" for="sabor27">
+                            <strong>FRANGO CATUPIRY C/BACON</strong><br>
+                            MOLHO, MUSSARELA, FRANGO, CATUPIRY E BACON<br>
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="FRANGO CHEDDAR C/BACON" id="sabor28">
+                        <label class="form-check-label" for="sabor28">
+                            <strong>FRANGO CHEDDAR C/BACON</strong><br>
+                            MOLHO, FRANGO, CHEDDAR E BACON<br>
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="FRANGO CREAM CHEESE" id="sabor29">
+                        <label class="form-check-label" for="sabor29">
+                            <strong>FRANGO CREAM CHEESE</strong><br>
+                            Molho, mussarela, frango e cream cheese<br>
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="HOT 4 QUEIJOS" id="sabor30">
+                        <label class="form-check-label" for="sabor30">
+                            <strong>HOT 4 QUEIJOS</strong><br>
+                            Molho, mussarela, parmesão, catupiry, provolone e pimenta<br>
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="HOT-DOG ESPECIAL" id="sabor31">
+                        <label class="form-check-label" for="sabor31">
+                            <strong>HOT-DOG ESPECIAL</strong><br>
+                            MOLHO, MUSSARELA,VINA, MILHO, TOMATE, FRANGO CATUPIRY E PALHA<br>
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="ITALIANA" id="sabor32">
+                        <label class="form-check-label" for="sabor32">
+                            <strong>ITALIANA</strong><br>
+                            Molho, mussarela, tomate, palmito, azeitonas e oregano<br>
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="LEVE" id="sabor33">
+                        <label class="form-check-label" for="sabor33">
+                            <strong>LEVE</strong><br>
+                            Mussarela, peito de peru, tomate seco, creme de leite e oregano<br>
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="LOMBACON" id="sabor34">
+                        <label class="form-check-label" for="sabor34">
+                            <strong>LOMBACON</strong><br>
+                            Molho, mussarela, lombo e bacon<br>
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="MINEÍRA" id="sabor35">
+                        <label class="form-check-label" for="sabor35">
+                            <strong>MINEÍRA</strong><br>
+                            Molho, mussarela, frango, calabresa, milho e oregano<br>
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="MISTA ESPECIAL" id="sabor36">
+                        <label class="form-check-label" for="sabor36">
+                            <strong>MISTA ESPECIAL</strong><br>
+                            Molho, mussarela, frango, bacon, milho, ervilha, tomate, parmesão e oregano<br>
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="NACHOS" id="sabor37">
+                        <label class="form-check-label" for="sabor37">
+                            <strong>NACHOS</strong><br>
+                            Molho, mussarela, bolonhesa, cheddar, nachos e oregano<br>
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="PALMITO" id="sabor38">
+                        <label class="form-check-label" for="sabor38">
+                            <strong>PALMITO</strong><br>
+                            Molho, mussarela, palmito, azeitonas e oregano<br>
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="PEITO DE PERU" id="sabor39">
+                        <label class="form-check-label" for="sabor39">
+                            <strong>PEITO DE PERU</strong><br>
+                            Molho, mussarela, peito de peru e oregano<br>
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="PEPPA PIZZA" id="sabor40">
+                        <label class="form-check-label" for="sabor40">
+                            <strong>PEPPA PIZZA</strong><br>
+                            MOLHO,MUSSARELA,PRESUNTO,LOMBO E BACON<br>
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="PERUANA" id="sabor41">
+                        <label class="form-check-label" for="sabor41">
+                            <strong>PERUANA</strong><br>
+                            Molho, mussarela, atum, cebola, azeitonas e oregano<br>
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="PIZZAÍOLO" id="sabor42">
+                        <label class="form-check-label" for="sabor42">
+                            <strong>PIZZAÍOLO</strong><br>
+                            Molho, mussarela, bacon, tomate, parmesão e oregano<br>
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="PORTUGUESA ESPECIAL" id="sabor43">
+                        <label class="form-check-label" for="sabor43">
+                            <strong>PORTUGUESA ESPECIAL</strong><br>
+                            MOLHO, MUSSARELA, PRESUNTO, PALMITO, CEBOLA, OVOS E AZEITONAS<br>
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="RÚCULA C/ TOMATE SECO" id="sabor44">
+                        <label class="form-check-label" for="sabor44">
+                            <strong>RÚCULA C/ TOMATE SECO</strong><br>
+                            Molho, mussarela, rúcula, tomate seco e oregano<br>
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="SALAMINHO" id="sabor45">
+                        <label class="form-check-label" for="sabor45">
+                            <strong>SALAMINHO</strong><br>
+                            Molho, mussarela, salame, rodelas de tomate e oregano<br>
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="SERTANEJA" id="sabor46">
+                        <label class="form-check-label" for="sabor46">
+                            <strong>SERTANEJA</strong><br>
+                            Molho, mussarela, frango, bacon, milho, ovos. cebola e oregano<br>
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="SICILIANA" id="sabor47">
+                        <label class="form-check-label" for="sabor47">
+                            <strong>SICILIANA</strong><br>
+                            Molho, mussarela, tomate picado, champignon e oregano<br>
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="STROGONOFF CARNE" id="sabor48">
+                        <label class="form-check-label" for="sabor48">
+                            <strong>STROGONOFF CARNE</strong><br>
+                            Molho, mussarela, strogonoff de carne, champignon, batata palha e oregano<br>
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="STROGONOFF FRANGO" id="sabor49">
+                        <label class="form-check-label" for="sabor49">
+                            <strong>STROGONOFF FRANGO</strong><br>
+                            Molho, mussarela, strogonoff de frango, champignon, batata palha e oregano<br>
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="SUPREMA" id="sabor50">
+                        <label class="form-check-label" for="sabor50">
+                            <strong>SUPREMA</strong><br>
+                            Molho, mussarela, ovos, champigon, palmito e frango<br>
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="VEGETARIANA" id="sabor51">
+                        <label class="form-check-label" for="sabor51">
+                            <strong>VEGETARIANA</strong><br>
+                            Mussarela, tomate, milho, ervilha, pimentão, cebola, azeitonas e oregano<br>
+                        </label>
+                    </div>
+                </div>
+            </div>
+
+            <button type="submit" class="btn btn-danger" id="montarPizza">Pedir Agora</button>
+        </form>
+    </section>
+
+    <!-- Contato -->
+    <section id="contato" class="container">
+        <h2 class="text-center mb-4">Fale Conosco</h2>
+        <form>
+            <div class="mb-3">
+                <label for="nome" class="form-label">Nome</label>
+                <input type="text" class="form-control" id="nome" />
+            </div>
+            <div class="mb-3">
+                <label for="mensagem" class="form-label">Mensagem</label>
+                <textarea class="form-control" id="mensagem" rows="3"></textarea>
+            </div>
+            <button type="submit" class="btn btn-danger" id="enviar">Enviar</button>
+        </form>
+    </section>
+
+    <!-- Rodapé -->
+    <footer>
+        <p>&copy; 2025 Pizzaria Forno do sul. Todos os direitos reservados.</p>
+    </footer>
+
+    <script>
+        // Função para mostrar alerta usando SweetAlert
+        function mostrarAlerta(titulo, mensagem, icone) {
+            Swal.fire({
+                title: titulo,
+                text: mensagem,
+                icon: icone,
+                confirmButtonText: 'Entendido'
+            });
+        }
+
+        // =========================================================================
+        // Lógica para Pedidos de Combo
+        // =========================================================================
+        const comboButtons = document.querySelectorAll('#pedidos .btn-danger');
+
+        comboButtons.forEach(button => {
+            button.addEventListener('click', (e) => {
+                e.preventDefault();
+                const card = button.closest('.card');
+                const combo = card.querySelector('.card-title').textContent.trim();
+                const descricao = card.querySelector('.card-text').textContent.trim();
+                const preco = card.querySelector('.preco').textContent.trim().replace('R$', '').trim();
+                const url = `finalizar_pedido_combo.html?combo=${encodeURIComponent(combo)}&descricao=${encodeURIComponent(descricao)}&preco=${encodeURIComponent(preco)}`;
+                window.location.href = url;
+            });
+        });
+
+        // =========================================================================
+        // Lógica para Montar Pizza (Com a nova validação)
+        // =========================================================================
+        document.addEventListener('DOMContentLoaded', () => {
+            const tamanhoSelect = document.getElementById('tamanho');
+            const saboresCheckboxes = document.querySelectorAll('#montar input[type="checkbox"]');
+
+            function getLimiteDeSabores() {
+                const selectedOption = tamanhoSelect.options[tamanhoSelect.selectedIndex];
+                return parseInt(selectedOption.getAttribute('data-limite-sabores'), 10);
+            }
+
+            function contarSaboresSelecionados() {
+                const checkedSabores = document.querySelectorAll('#montar input[type="checkbox"]:checked');
+                return checkedSabores.length;
+            }
+
+            // O único ponto de notificação é ao tentar ultrapassar o limite
+            saboresCheckboxes.forEach(checkbox => {
+                checkbox.addEventListener('change', (event) => {
+                    const limite = getLimiteDeSabores();
+                    const selecionados = contarSaboresSelecionados();
+
+                    // Se a caixa de seleção foi marcada e o limite foi excedido
+                    if (event.target.checked && selecionados > limite) {
+                        event.target.checked = false; // Desmarca o último sabor
+                        mostrarAlerta('Atenção!', `Você só pode escolher até ${limite} sabor(es) para o tamanho selecionado.`, 'warning');
+                    }
+                });
+            });
+
+            // Opcional: Desmarca os sabores ao mudar o tamanho para evitar confusão
+            tamanhoSelect.addEventListener('change', () => {
+                saboresCheckboxes.forEach(checkbox => {
+                    checkbox.checked = false;
+                });
+            });
+        });
+
+        // =========================================================================
+        // Validação final no envio do formulário
+        // =========================================================================
+        document.getElementById("pizzaForm").addEventListener("submit", function(e) {
+            e.preventDefault(); // evita envio padrão
+
+            const tamanhoSelect = document.getElementById('tamanho');
+            const sabores = Array.from(document.querySelectorAll('#montar input[type="checkbox"]:checked')).map(cb => cb.value);
+            
+            // Validações principais
+            if (sabores.length === 0) {
+                mostrarAlerta('Erro', 'Escolha pelo menos um sabor!', 'error');
+                return;
+            }
+
+            const limite = parseInt(tamanhoSelect.options[tamanhoSelect.selectedIndex].getAttribute('data-limite-sabores'), 10);
+            if (sabores.length > limite) {
+                mostrarAlerta('Erro', `O limite de sabores para o tamanho selecionado é de ${limite}. Por favor, desmarque alguns sabores.`, 'error');
+                return;
+            }
+            
+            // Se tudo estiver certo, prossegue para a próxima página
+            const tamanho = tamanhoSelect.value;
+            const params = new URLSearchParams();
+            params.set("tamanho", tamanho);
+            params.set("sabores", sabores.join(","));
+
+            window.location.href = "finalizar_pedido.html?" + params.toString();
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,236 @@
+ /* versão mobile */
+
+ @media (max-width: 991.98px) {
+        #menuMobile{
+
+       margin-top: -70px;
+            text-align: center;
+        }
+
+        /* hamburguinho */
+        .navbar-toggler{
+         color: white;
+            position: relative;
+            right: 200px;
+        
+        }
+
+        .navbar-toggler-icon {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='white' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}
+
+#logo-cabecalho{
+    background-color: pink;
+    display: none;
+
+}
+
+
+.navbar-brand{
+
+    margin-bottom: 150px;
+    position: relative;
+    left: 100px;
+    
+
+}
+
+
+.metodosPagamento{
+
+    position: relative;
+    left: 30px;
+}
+
+}
+
+ 
+
+ 
+ body {
+            background-image: url('../src/background.jpg');
+            backdrop-filter: blur(5px);
+            background-size: cover;
+            background-position: right;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            color: white;
+        }
+
+
+       h1{
+            font-size: 2.5em;
+         } 
+
+         /* img de metodos de pagamento */
+
+         .metodosPagamento{
+height: 50px;
+position: relative;
+ right:250px;
+
+
+
+ 
+          
+         }
+
+
+
+
+
+        .navbar {
+            background-color: #8B0000;
+        }
+        .navbar-brand, .nav-link {
+            color: white !important;
+            
+        }
+
+
+
+        header {
+            background-image: url('wallpaper.avif');
+            height: 400px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            text-shadow: 2px 2px 5px #000;
+        }
+        section {
+            padding: 60px 0;
+        }
+        .card {
+            border: none;
+            border-radius: 15px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+            background-color: rgba(246, 253, 240, 0.808);
+            text-align: center;
+            height: 500px;
+        }
+        .card-body {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            height: 100%;
+        }
+        .promo {
+            background-color: #ffd700;
+            padding: 10px;
+            font-weight: bold;
+            color: #8B0000;
+        }
+
+
+
+  #comboCarousel .carousel-control-prev,
+  #comboCarousel .carousel-control-next {
+    width: auto;
+    top: 50%;
+    transform: translateY(-50%);
+
+  }
+
+  #comboCarousel .carousel-control-prev {
+    left: -80px;
+  }
+
+  #comboCarousel .carousel-control-next {
+    right: -80px;
+  }
+
+
+  /* cor dos controles dos slides */
+
+  .carousel-control-prev-icon{
+background-color: rgb(161, 5, 5);
+border-radius: 50px;
+padding: 20px;
+  }
+
+ 
+  .carousel-control-next-icon{
+
+background-color: rgb(161, 5, 5);
+border-radius: 50px;
+padding: 20px;
+
+  }
+
+  
+
+
+ 
+
+
+
+        footer {
+            background-color: #8B0000;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+        .text-center {
+            background-color: rgb(67, 128, 17);
+            padding: 30px;
+            border-radius: 15px;
+        }
+        .mb-3 {
+            background-color: #8B0000;
+            padding: 25px;
+            border-radius: 15px;
+        }
+        .btn-danger {
+            margin-top: auto;
+        }
+        img {
+            height: 300px;
+            width: 400px;
+        }
+        /* Botão mais sabores destacado */
+        .btn-link {
+            font-size: 1.5em;
+            text-decoration: none;
+            color: yellow;
+            animation: piscar 1s infinite;
+            transition: transform 0.2s;
+            display: inline-block;
+            text-align: center;
+        }
+        .btn-link:hover {
+            transform: scale(1.4);
+            color: green;
+        }
+        @keyframes piscar {
+            0%, 100% {
+                opacity: 1;
+            }
+            50% {
+                opacity: 0.3;
+            }
+        }
+
+/* preços dos combos */
+        .preco{
+
+font-size: 1.7em;
+color: red;
+font-weight: bold;
+        }
+
+
+        /* Botões "Montar Pizza" e "Enviar" personalizados e centralizados  */
+        #enviar{
+   display: block;
+   margin: 0 auto;
+   font-size: 1.5em;
+        }
+
+                #montarPizza{
+   display: block;
+   margin: 0 auto;
+   font-size: 1.5em;
+
+        }
+
+        
