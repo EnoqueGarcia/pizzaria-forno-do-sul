@@ -42,21 +42,36 @@
     left: 30px;
 }
 
+
+.carousel-control-next-icon{
+    display: none;
 }
 
- 
+}
+
+         html {
+            margin: 0;
+            padding: 0;
+            /* Garante que a página não tenha rolagem horizontal */
+            overflow-x: hidden;
+        }
+
 
  
  body {
             background-image: url('../src/background.jpg');
             backdrop-filter: blur(5px);
             background-size: cover;
-            background-position: right;
+        
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             color: white;
+               height: 100vh;
+ 
         }
 
 
+
+        
        h1{
             font-size: 2.5em;
          } 
