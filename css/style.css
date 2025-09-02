@@ -38,8 +38,9 @@
 
 .metodosPagamento{
 
-    position: relative;
+    position: absolute;
     left:20px;
+    width:350px ;
 }
 
  .carousel-control-next{
