@@ -42,13 +42,19 @@
     left: 30px;
 }
 
+ .carousel-control-next{
+  display: none;
+ }
+
+
+
 }
 
  
 
  
  body {
-            background-image: url('./src/background.jpg');
+            background-image: url('../src/background.jpg');
             backdrop-filter: blur(5px);
             background-size: cover;
             background-position: right;
