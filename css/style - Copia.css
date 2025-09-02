@@ -1,47 +1,56 @@
  /* versão mobile */
 
-@media (max-width: 991.98px) {
-    #menuMobile{
-        margin-top: -70px;
-        text-align: center;
-    }
+ @media (max-width: 991.98px) {
+        #menuMobile{
 
-    /* hamburguinho */
-    .navbar-toggler{
-        color: white;
-        /* Removendo a posição relativa e o 'right' fixo para evitar o overflow */
-        position: static;
-        margin: 0 auto;
-    }
+       margin-top: -70px;
+            text-align: center;
+        }
 
-    .navbar-toggler-icon {
-        background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='white' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
-    }
+        /* hamburguinho */
+        .navbar-toggler{
+         color: white;
+            position: relative;
+            right: 200px;
+        
+        }
 
-    #logo-cabecalho{
-        background-color: pink;
-        display: none;
-    }
+        .navbar-toggler-icon {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='white' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}
 
-    .navbar-brand{
-        margin-bottom: 150px;
-        /* Removendo a posição relativa e o 'left' fixo para evitar o overflow */
-        position: static;
-        text-align: center;
-    }
+#logo-cabecalho{
+    background-color: pink;
+    display: none;
 
-    .metodosPagamento{
-        /* Removendo o 'left' fixo */
-        position: static;
-        margin: 0 auto;
-    }
+}
 
-    html {
-        margin: 0;
-        padding: 0;
-        /* Garante que a página não tenha rolagem horizontal */
-        overflow-x: hidden;
-    }
+
+.navbar-brand{
+
+    margin-bottom: 150px;
+    position: relative;
+    left: 100px;
+    
+
+}
+
+
+.metodosPagamento{
+
+    position: relative;
+    left: 30px;
+}
+
+
+      html {
+            margin: 0;
+            padding: 0;
+            /* Garante que a página não tenha rolagem horizontal */
+            overflow-x: hidden;
+        }
+
+
 }
 
    
