@@ -43,13 +43,7 @@
 }
 
 
-.carousel-control-next-icon{
-    display: none;
-}
-
-}
-
-         html {
+      html {
             margin: 0;
             padding: 0;
             /* Garante que a página não tenha rolagem horizontal */
@@ -57,15 +51,19 @@
         }
 
 
+}
+
+   
+
  
  body {
             background-image: url('../src/background.jpg');
             backdrop-filter: blur(5px);
-            background-size: cover;
+          
         
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             color: white;
-               height: 100vh;
+           
  
         }
 
