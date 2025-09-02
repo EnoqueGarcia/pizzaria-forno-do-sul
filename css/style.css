@@ -55,7 +55,7 @@
 
  
  body {
-            background-image: url('../src/madeira.png');
+            background-image: url('../src/background.jpg');
             backdrop-filter: blur(3px);
             background-size: cover;
             background-position: right;
